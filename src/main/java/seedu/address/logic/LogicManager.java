@@ -46,6 +46,7 @@ public class LogicManager implements Logic {
         CommandResult commandResult;
         Command<? super Model> command = studyBananasParser.parseCommand(commandText);
         commandResult = command.execute(model);
+        assert false;
 
         try {
             storage.saveAddressBook(model.getAddressBook());
